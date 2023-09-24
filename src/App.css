@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255); /* Color de fondo azul */
 }
 
-.App-link {
-  color: #61dafb;
+.titulo{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  
+}
+#cuadro-azul {
+  background-color: rgb(17, 212, 226); /* Color de fondo del cuadro azul */
+  width: 500px; /* Cambia el tamaño del cuadro azul según tus preferencias */
+  height: 500px; /* Cambia el tamaño del cuadro azul según tus preferencias */
+  position: relative;
+  overflow: hidden; /* Evita que el pato se salga del cuadro */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pato {
+  width: 50px; /* Cambia el tamaño del pato según tus preferencias */
+  height: 50px; /* Cambia el tamaño del pato según tus preferencias */
+  background-image: url('./assests/imagen_del_pato.png'); /* Reemplaza con la ruta de tu imagen de pato */
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+}
+
+
+
+@keyframes huye {
+  0% {
+    transform: translateX(-50%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(200%); /* Puedes ajustar el valor según tu preferencia */
   }
 }
