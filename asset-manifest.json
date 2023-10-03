@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/patosCazados/static/css/main.843b9673.css",
-    "main.js": "/patosCazados/static/js/main.a366b7e0.js",
+    "main.css": "/patosCazados/static/css/main.8f6849ed.css",
+    "main.js": "/patosCazados/static/js/main.ffe8d284.js",
     "static/media/imagen_del_pato.png": "/patosCazados/static/media/imagen_del_pato.e6b21e65641cce43b7a4.png",
     "index.html": "/patosCazados/index.html",
-    "main.843b9673.css.map": "/patosCazados/static/css/main.843b9673.css.map",
-    "main.a366b7e0.js.map": "/patosCazados/static/js/main.a366b7e0.js.map"
+    "main.8f6849ed.css.map": "/patosCazados/static/css/main.8f6849ed.css.map",
+    "main.ffe8d284.js.map": "/patosCazados/static/js/main.ffe8d284.js.map"
   },
   "entrypoints": [
-    "static/css/main.843b9673.css",
-    "static/js/main.a366b7e0.js"
+    "static/css/main.8f6849ed.css",
+    "static/js/main.ffe8d284.js"
   ]
 }
