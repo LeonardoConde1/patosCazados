@@ -2,9 +2,10 @@ body {
   margin: 0;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  margin: 50px;
   background-color: rgb(255, 255, 255); /* Color de fondo azul */
 }
 
@@ -30,7 +31,46 @@ body {
   position: absolute;
 }
 
+.iniciarJuego{
+   
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 122px;
+    color: azure;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
 
+.iniciarJuego:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(205, 238, 16), rgb(188, 255, 4), rgb(20, 255, 51), rgb(218, 88, 37), red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
 
 @keyframes huye {
   0% {
@@ -40,3 +80,4 @@ body {
     transform: translateX(200%); /* Puedes ajustar el valor según tu preferencia */
   }
 }
+

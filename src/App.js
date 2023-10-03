@@ -3,6 +3,8 @@ import './App.css';
 import { Howl } from 'howler';
 
 function App() {
+
+  
   const [sound] = useState(new Howl({
     src: ['quack.mp3'],
     volume: 1.0,
@@ -79,11 +81,12 @@ function App() {
           <div>Tiempo restante: {tiempoRestante} segundos</div>
         </div>
       ) : (
-        <button onClick={reiniciarJuego}>Iniciar Juego</button>
+        <button className='iniciarJuego' onClick={reiniciarJuego}>Iniciar Juego</button>
       )}
     </div>
-  );
+ 
+ );
+
+
 }
-
 export default App;
-
